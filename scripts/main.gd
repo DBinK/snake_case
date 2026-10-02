@@ -45,7 +45,7 @@ func _ready() -> void:
 	_layout()
 	get_viewport().size_changed.connect(_layout)
 	_on_score_changed(0)
-	_set_status("> boot: snake.sys loaded... press any key to run")
+	_set_status("> boot: snake_case loaded... press any key to run")
 
 
 func _make_label(text: String, size: int, color: Color) -> Label:
@@ -67,7 +67,7 @@ func _build_hud() -> void:
 	_log_label.name = "Log"
 	layer.add_child(_log_label)
 
-	_title_label = _make_label("S N A K E . S Y S", 26, GREEN)
+	_title_label = _make_label("s n a k e _ c a s e", 26, GREEN)
 	_title_label.name = "Title"
 	layer.add_child(_title_label)
 
